@@ -1,0 +1,39 @@
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-nav > .nav-item {
+    margin-right: 15px;
+}
+
+.navbar-nav > li > a {
+    color: red;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.hero-section {
+    height: 100vh; /* Full -h */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa; /*background */
+    text-align: center;
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;  
+}
+
+.hero-text {margin-top: 20px;}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#ri {
+    width: 250px;
+}
