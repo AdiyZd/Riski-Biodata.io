@@ -34,6 +34,44 @@
     font-weight: bold;
 }
 
-#ri {
-    width: 250px;
+/* .lt {
+    position: absolute;
+    z-index: 0;
+    width: 500px;
+    height: 100px;
+    transform: rotate(90deg);
+    margin-left: -230px;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: top;
+    
+} */
+
+.shadow-container {
+    position: relative;
+    display: inline-block;
 }
+
+.shadow-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100rem;
+    height: 100rem;
+    background: url(../background/cat.jpg) no-repeat center/cover ; /* agar cover*/
+    z-index: -1; /*bawah*/
+}
+
+#ri {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 480px;
+    height: 360px;
+    object-fit: cover;
+    object-position: top;
+    margin-left: 60px;
+    /* font-size: 30px; */
+}
+

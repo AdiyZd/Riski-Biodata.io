@@ -1,0 +1,54 @@
+.hero-text {
+    position: relative;
+}
+
+#id {
+    width: 0ch;
+    display: inline-block;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    /* font-size: 24px; */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(18) 1s infinite alternate;
+}
+
+#line {
+    display: inline-block;
+    position: relative;
+    color: rgb(71, 56, 37);
+    font-weight: 200;
+    font-size: 50px;
+    /* animation: crow 0.5s linear 0s infinite; */
+    /* animation: crow 0.5s linear infinite; */
+    animation: blink 0.5s steps(1) infinite, syncTyping 2s steps(18) 1s infinite alternate;
+    vertical-align: bottom;
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+    to {
+        width: 18ch;
+    }
+}
+
+@keyframes crow {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes syncTyping { /* sikronisai animasi */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
