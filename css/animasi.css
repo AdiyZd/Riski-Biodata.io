@@ -52,3 +52,39 @@
         opacity: 1;
     }
 }
+
+
+/* saat di hover maka akan ada efek merah */ 
+/* hanya bagian navbar */
+
+.navbar-brand:hover {
+    color: white !important;
+    border-bottom: 1.5px solid white;
+
+    transition: 0.50s ease;
+    text-shadow: 
+        -3px -3px 10px red,
+        3px 3px 10px red,
+        -3px -3px 10px red,
+        3px 3px 10px red;
+}
+
+.navbar-brand::before {
+    margin: 0;
+    padding: 0; /* memulai ukuran pading dari nol*/
+    background-color: white;
+    transition: width 0.3s ease left 0.3s ease-in-out; /* animasi bootom */
+}
+
+.navbar-nav > .nav-item > .nav-link:hover {
+    color: red; /* biyar di tangkat pdi perjuangan */
+    transition: 0.50s ease;
+    font-weight: 510 !important;
+    
+    border-bottom: 1.5px solid white;
+    text-shadow: 
+        -3px -3px 10px white,
+        3px 3px 10px white,
+        -3px -3px 10px white,
+        3px 3px 10px white;
+}
