@@ -88,3 +88,30 @@
         -3px -3px 10px white,
         3px 3px 10px white;
 }
+
+#Abaout:hover{
+    color: red !important;
+    /* border-bottom: 1.5px solid white; */
+    transition: 0.50s ease ;
+    font-weight: bold !important;
+    cursor: pointer;
+
+    text-shadow: 
+        -3px -3px 10px white,
+        3px 3px 10px white,
+        -3px -3px 10px white,
+        3px 3px 10px white;
+}
+
+/* Servis animasi */
+
+#Servis:hover {
+    cursor: pointer;   
+    color: red; 
+
+    text-shadow:
+    2px 2px 5px black
+    -2px -2px 5px black
+    2px 2px 5px black
+    -2px -2px 5px black;
+}

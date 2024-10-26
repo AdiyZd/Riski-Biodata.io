@@ -3,11 +3,10 @@ body {
     overflow-x: hidden !important;
     background-color: #f8f9fa;
     padding-top: 50px;
+    min-height: 5000px;
 }
 
-.navbar {
-    z-index: 3;
-}
+.navbar {z-index: 1000;}
 
 .navbar-collapse {
     display: flex;
@@ -30,9 +29,7 @@ body {
     margin-right: 0;
 }
 
-.navbar-nav > .nav-item {
-    margin-right: 15px;
-}
+.navbar-nav > .nav-item {margin-right: 15px;}
 
 .navbar-nav > li > a {
     color: red; /*!important*/ 
@@ -99,10 +96,84 @@ body {
     position: relative;
     z-index: 1;
     width: 590px;
-    height: 460px;
+    font-size: 200px;
+    height: 443px;
     object-fit: cover;
     object-position: top;
     margin-left: 60px;
     filter: grayscale(100%) !important;
 }
 
+/* styling abaut me */
+
+.ab{
+    width: auto;
+    background-color: black;
+    padding-top: 1rem;
+    height: 700px;
+    overflow: hidden;
+}
+
+@media (max-width: 780px) {
+    .ab {
+        padding-top: 5rem;
+        height: 1000px;
+    }
+    .kanan > .kiri {
+        transform: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .ab {
+        padding-top: 5rem;
+        height: 1300px;
+    }
+}
+
+@media (max-width: 600) {
+    .ab {
+        padding-top: 2rem;
+    }
+}
+
+#Abaout {
+    padding-top: 5rem;
+    font-weight: bold;
+    color: black !important;
+    /* text-decoration: underline; */
+
+    text-shadow: 
+    1px 1px 2px white, /* Kanan bawah */
+    -1px -1px 2px white, /* Kiri atas */
+    1px 1px 2px white, /* Kanan bawah */
+    -1px -1px 2px white; /* Kiri atas */
+}
+
+.info {
+    font-weight: bold !important;
+    text-shadow: 1px 1px 1px white;
+    cursor: pointer;
+}
+
+.kiri {
+    padding-top: 30px;
+    transform: translateX(-100%); /* Animasi dari kiri */
+    cursor: pointer;
+}
+
+.bot {
+    list-style: disc;
+    padding-left: 0;
+}
+
+.kanan {
+    padding-top: 30px;
+    transform: translateX(100%); /* Animasi dari kanan*/
+    cursor: pointer;
+}
+
+#Servis {
+    padding-top: 5rem;
+    font-weight: bold;  
+}
