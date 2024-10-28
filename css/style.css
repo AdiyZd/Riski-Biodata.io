@@ -3,7 +3,7 @@ body {
     overflow-x: hidden !important;
     background-color: #f8f9fa;
     padding-top: 50px;
-    min-height: 5000px;
+    min-height: 3000px;
 }
 
 .navbar {z-index: 1000;}
@@ -116,55 +116,33 @@ body {
 
 @media(max-width: 992px) {
     .kiri > .kanan {
-        min-height: 1000px;
-    }
-}
-
-@media (max-width: 780px) {
-    .ab {
-        padding-top: 5rem;
-        height: 1000px;
-    }
-    .kanan > .kiri {
-        transform: none;
+        min-height: auto;
     }
 }
 
 @media (max-width: 450px) {
     .ab {
         padding-top: 5rem;
-        height: 1300px;
+        height: auto;
     }
 }
 
 @media (max-width: 600) {
     .ab {
         padding-top: 2rem;
+        height: auto;
     }
 }
 
 #Abaout {
     padding-top: 5rem;
     font-weight: bold;
-    color: black !important;
-    /* text-decoration: underline; */
-
-    text-shadow: 
-    1px 1px 2px white, /* Kanan bawah */
-    -1px -1px 2px white, /* Kiri atas */
-    1px 1px 2px white, /* Kanan bawah */
-    -1px -1px 2px white; /* Kiri atas */
-}
+    cursor: pointer;
+ }
 
 .info {
     font-weight: bold !important;
     text-shadow: 1px 1px 1px white;
-    cursor: pointer;
-}
-
-.kiri {
-    padding-top: 30px;
-    transform: translateX(-100%); /* Animasi dari kiri */
     cursor: pointer;
 }
 
@@ -173,15 +151,67 @@ body {
     padding-left: 0;
 }
 
-.kanan {
-    padding-top: 30px;
-    overflow: auto;
-    min-height: 700px;
-    transform: translateX(100%); /* Animasi dari kanan*/
-    cursor: pointer;
-}
-
 #Servis {
     padding-top: 5rem;
     font-weight: bold;  
+    margin-bottom: 5rem;
+    cursor: pointer;
+    min-height: auto;
 }
+
+.ss {
+    padding-top: 2rem;
+    min-height: 500px;
+}
+
+#Contac {
+    z-index: 1;
+    padding-top: 5rem;
+    height: 750px !important;
+    color: #f8f9fa !important;
+}
+
+#ft {
+    margin-top: -3rem;
+    min-height: auto;
+    min-height: 200px;
+}
+
+.card-footer {
+    min-height: 200px;
+}
+
+#footer {
+    padding-top: 2rem;
+}
+
+#fu {
+    padding-top: 2.5rem;
+}
+
+@media(max-width: 650px) {
+    #footer {
+        padding-top: 20px;
+    }
+    #fu {
+        padding-top: 10px;
+    }
+ }
+
+@media(max-width: 550px) {
+    #footer {
+        padding-top: 20px;
+    }
+    #fu {
+        padding-top: 10px;
+    }
+ }
+
+@media(max-width: 450px) {
+    #footer {
+        padding-top: 20px;
+    }
+    #fu {
+        padding-top: 10px;
+    }
+ }

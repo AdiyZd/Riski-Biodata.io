@@ -3,7 +3,7 @@ gsap.registerPlugin(TextPlugin);
 
 // Animasi teks
 gsap.to("#gsap-text", {
-    text: "Hello, I’m Riski.           ", // kasih sepasi agar animasi tidak langsung delet
+    text: "Hello, I’m Rizky.           ", // kasih sepasi agar animasi tidak langsung delet
     duration: 4,
     ease: "power1.inOut",
     repeat: -1,
